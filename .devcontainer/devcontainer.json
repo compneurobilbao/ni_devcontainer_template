@@ -1,0 +1,37 @@
+{
+    "name": "Compneuro",
+    "build": {
+        "dockerfile": "../Dockerfile",
+        "context": ".."
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "EditorConfig.EditorConfig",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "ms-toolsai.jupyter",
+                "VisualStudioExptTeam.vscodeintellicode",
+                "ms-python.black-formatter",
+                "ms-python.isort",
+                "charliermarsh.ruff",
+                "joyceerhl.vscode-pyodide"
+            ],
+
+            "settings": {
+                "python.defaultInterpreterPath": "/opt/conda/bin/python",
+                "python.analysis.typeCheckingMode": "basic",
+                "python.formatting.provider": "none",
+                "[python]": {
+                    "editor.defaultFormatter": "ms-python.black-formatter",
+                    "editor.formatOnSave": true
+                  }
+            }
+            
+        }
+    },
+    "features": {
+        "ghcr.io/devcontainers/features/common-utils:2": {},
+        "ghcr.io/stuartleeks/dev-container-features/shell-history:latest": {}
+    }
+}
