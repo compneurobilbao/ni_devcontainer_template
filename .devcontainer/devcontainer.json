@@ -14,15 +14,12 @@
                 "ms-python.python",
                 "ms-python.vscode-pylance",
                 "ms-toolsai.jupyter",
-                "VisualStudioExptTeam.vscodeintellicode",
-                "ms-python.black-formatter",
-                "ms-python.isort",
-                "charliermarsh.ruff",
-                "joyceerhl.vscode-pyodide"
+                "ms-python.black-formatter"
             ],
 
             "settings": {
-                "python.defaultInterpreterPath": "/opt/conda/bin/python",
+                "python.defaultInterpreterPath": "/usr/local/bin/python",
+                "jupyter.notebookKernel": "/usr/local/bin/python",
                 "python.analysis.typeCheckingMode": "basic",
                 "python.formatting.provider": "none",
                 "[python]": {
