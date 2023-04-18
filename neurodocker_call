@@ -1,11 +1,11 @@
 docker run -i repronim/neurodocker generate docker --pkg-manager apt  \
 --base-image neurodebian:buster   \
 --ants version=2.4.1 \
---freesurfer version=7.1.1-min \
+--freesurfer version=7.1.1 \
 --dcm2niix method=binaries version=v1.0.20201102 \
 --afni method=binaries version=latest \
 --mrtrix3 method=binaries version=3.0.2 \
 --fsl version=6.0.4 \
 > neurodocker.Dockerfile
 
-# docker build --tag neurodocker_asier --file neurodocker.Dockerfile .
+# docker build --tag neurodocker_lab --file neurodocker.Dockerfile .
