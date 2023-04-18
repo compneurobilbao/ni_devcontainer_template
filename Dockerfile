@@ -1,5 +1,4 @@
-FROM mcr.microsoft.com/devcontainers/anaconda:0-3
-
+FROM mcr.microsoft.com/vscode/devcontainers/python:3.9
 
 # Copy requirements.txt to the container
 COPY requirements.txt /tmp/requirements.txt
